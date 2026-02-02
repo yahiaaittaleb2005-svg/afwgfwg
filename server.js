@@ -44,4 +44,7 @@ app.post("/create-checkout-session", async (req, res) => {
   res.json({ url: session.url });
 });
 
-app.listen(process.env.PORT || 3000, () => console.log("HalalHub avviato 🚀"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`🚀 Server HalalHub attivo sulla porta ${PORT}`));
+
+
