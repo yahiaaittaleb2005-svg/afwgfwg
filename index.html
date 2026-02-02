@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HalalHub - Etico. Naturale. Culturale.</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <img src="images/logo.png" class="logo" alt="HalalHub Logo" />
+    <nav>
+      <a href="#prodotti">Prodotti</a>
+      <a href="#chi-siamo">Chi Siamo</a>
+      <a href="#contatto">Contatti</a>
+      <a href="login.html" id="loginBtn">Login</a>
+      <button id="logoutBtn" style="display:none;">Logout</button>
+    </nav>
+  </div>
+</header>
+
+<section id="hero" class="hero">
+  <img src="images/banner_hero.png" alt="HalalHub banner" class="hero-bg" />
+  <div class="hero-overlay">
+    <h1>🌙 HalalHub</h1>
+    <p>Tradizione. Purezza. Innovazione.</p>
+    <button onclick="document.querySelector('#prodotti').scrollIntoView({behavior: 'smooth'})">
+      Scopri i prodotti
+    </button>
+  </div>
+</section>
+
+<section id="descrizione">
+  <h2>Un ponte tra cultura e natura</h2>
+  <p>
+    HalalHub unisce estetica culturale e valori etici per offrire
+    esperienze autentiche. I nostri prodotti naturali e certificati halal
+    sono pensati per chi desidera bellezza, sostenibilità e spiritualità.
+  </p>
+</section>
+
+<section id="prodotti" class="product-grid">
+  <h2>I nostri prodotti</h2>
+  <div class="card">
+    <img src="images/olio.webp" alt="Olio" />
+    <h3>Olio di Neem</h3>
+    <p>Lenitivo, naturale e 100% halal.</p>
+    <button class="buy-btn" data-name="Olio di Neem" data-price="1999">Acquista - €19.99</button>
+  </div>
+  <div class="card">
+    <img src="images/tisana.webp" alt="Tisana Bio" />
+    <h3>Tisana Bio</h3>
+    <p>Delicata e rilassante. Provenienza certificata.</p>
+    <button class="buy-btn" data-name="Tisana Bio" data-price="1499">Acquista - €14.99</button>
+  </div>
+  <div class="card">
+    <img src="images/profumo.webp" alt="Profumo Naturale" />
+    <h3>Profumo Naturale</h3>
+    <p>Senza alcool, raffinato con oli essenziali puri.</p>
+    <button class="buy-btn" data-name="Profumo Naturale" data-price="2499">Acquista - €24.99</button>
+  </div>
+  <div class="card">
+    <img src="images/sapone.webp" alt="Sapone Artigianale" />
+    <h3>Sapone Artigianale</h3>
+    <p>Realizzato da artigiani etici con oli halal.</p>
+    <button class="buy-btn" data-name="Sapone Artigianale" data-price="999">Acquista - €9.99</button>
+  </div>
+</section>
+
+<section id="chi-siamo" class="about">
+  <h2>Chi siamo</h2>
+  <p>
+    Siamo un team di creativi e studiosi dell’etica islamica,
+    appassionati di design, natura e spiritualità. 
+    HalalHub nasce per offrire qualità, bellezza e trasparenza.
+  </p>
+</section>
+
+<section id="contatto" class="contact-section">
+  <h2>Contattaci</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Nome completo" required />
+    <input type="email" placeholder="Email" required />
+    <textarea placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+    <button type="submit">Invia il messaggio</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2024 HalalHub · Tutti i diritti riservati</p>
+  <small>Pagamenti sicuri con Stripe · Etico · Sostenibile · 100% Halal</small>
+</footer>
+
+</body>
+</html>
